@@ -43,13 +43,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rGx-ek-T9y" firstAttribute="leading" secondItem="6fW-Qk-0qZ" secondAttribute="leading" id="1uH-aS-4z1"/>
                             <constraint firstItem="6fW-Qk-0qZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="C5A-Rk-q1H"/>
                             <constraint firstItem="0ic-Dm-fWm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Edi-0V-Y5u"/>
-                            <constraint firstItem="rGx-ek-T9y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I3Z-Ak-mJR"/>
+                            <constraint firstItem="rGx-ek-T9y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="br6-bZ-5Wa"/>
                             <constraint firstItem="0ic-Dm-fWm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hod-93-VmB"/>
-                            <constraint firstItem="rGx-ek-T9y" firstAttribute="trailing" secondItem="6fW-Qk-0qZ" secondAttribute="trailing" id="lWP-fa-9ip"/>
                             <constraint firstItem="6fW-Qk-0qZ" firstAttribute="top" secondItem="0ic-Dm-fWm" secondAttribute="bottom" constant="40" id="uzO-yZ-gwz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rGx-ek-T9y" secondAttribute="trailing" constant="70" id="z4Y-na-LxG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6fW-Qk-0qZ" secondAttribute="trailing" constant="70" id="zZh-Kl-QfE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rGx-ek-T9y" secondAttribute="bottom" constant="100" id="zfy-PN-8VM"/>
                         </constraints>
@@ -139,14 +138,6 @@
             <point key="canvasLocation" x="-165.21739130434784" y="118.52678571428571"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="6fW-Qk-0qZ">
-            <size key="intrinsicContentSize" width="32" height="34"/>
-        </designable>
-        <designable name="rGx-ek-T9y">
-            <size key="intrinsicContentSize" width="59" height="34"/>
-        </designable>
-    </designables>
     <resources>
         <image name="githubLogo" width="554" height="554"/>
         <systemColor name="labelColor">
