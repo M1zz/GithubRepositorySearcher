@@ -23,6 +23,11 @@ class MainSearchViewController: UIViewController {
         createDismissKeyboardTapGusture()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        searchTextField.text = ""
+    }
+    
     private func createDismissKeyboardTapGusture() {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
@@ -33,8 +38,12 @@ class MainSearchViewController: UIViewController {
     }
     
     @objc private func pushDetailViewController() {
-        let followerListVC = DetailTableViewController.instantiateFromStoryboard()
+        guard let searchKeyword = searchTextField.text else { return }
+        let followerListVC = DetailTableViewController.instantiateFromStoryboard(repositoryName: searchKeyword)
         navigationController?.pushViewController(followerListVC, animated: true)
+        
+        
+        
     }
 }
 

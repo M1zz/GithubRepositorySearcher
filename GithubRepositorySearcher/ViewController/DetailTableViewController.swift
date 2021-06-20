@@ -9,11 +9,14 @@ import UIKit
 
 class DetailTableViewController: UIViewController {
 
+    var repositoryName: String = ""
+    
     @IBOutlet weak var tableView: UITableView!
     
-    static func instantiateFromStoryboard() -> DetailTableViewController {
+    static func instantiateFromStoryboard(repositoryName: String) -> DetailTableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! DetailTableViewController
+        viewController.repositoryName = repositoryName
         return viewController
     }
     
@@ -21,6 +24,6 @@ class DetailTableViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         tableView.backgroundColor = .red
-        navigationItem.title = "test"
+        navigationItem.title = repositoryName
     }
 }
