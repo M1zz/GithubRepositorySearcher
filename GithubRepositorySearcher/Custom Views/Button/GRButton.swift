@@ -7,7 +7,6 @@
 
 import UIKit
 
-@IBDesignable
 final class GRButton: UIButton {
 
     required init?(coder: NSCoder) {

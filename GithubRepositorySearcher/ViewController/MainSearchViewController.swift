@@ -38,12 +38,13 @@ class MainSearchViewController: UIViewController {
     }
     
     @objc private func pushDetailViewController() {
-        guard let searchKeyword = searchTextField.text else { return }
-        let followerListVC = DetailTableViewController.instantiateFromStoryboard(repositoryName: searchKeyword)
-        navigationController?.pushViewController(followerListVC, animated: true)
-        
-        
-        
+        if isRepositorynameEntered {
+            guard let searchKeyword = searchTextField.text else { return }
+            let followerListVC = DetailTableViewController.instantiateFromStoryboard(repositoryName: searchKeyword)
+            navigationController?.pushViewController(followerListVC, animated: true)
+        } else {
+            self.presentAlert(errorMessage: .emptyTextField)
+        }
     }
 }
 
@@ -52,7 +53,6 @@ extension MainSearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         searchTextField.resignFirstResponder()
-        
         pushDetailViewController()
         
         return true
