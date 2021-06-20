@@ -5,46 +5,66 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C0C4DF4-C760-4FC4-A33A-DE28DB0B1934"
+            uuid = "8BB32199-17DA-4B4E-B2B8-E357AD457E62"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            breakpointStackSelectionBehavior = "1"
-            scope = "1"
-            stopOnStyle = "0">
+            filePath = "GithubRepositorySearcher/Model/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "Response"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "8BB32199-17DA-4B4E-B2B8-E357AD457E62 - 7123cdc1b019dd6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GithubRepositorySearcher.Repository.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;GithubRepositorySearcher.Repository.CodingKeys&gt;"
+                  moduleName = "GithubRepositorySearcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyunho.lee/Documents/workspace/git/GithubRepositorySearcher/GithubRepositorySearcher/Model/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "8BB32199-17DA-4B4E-B2B8-E357AD457E62 - b6344b13a889d1d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GithubRepositorySearcher.Repository.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "GithubRepositorySearcher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyunho.lee/Documents/workspace/git/GithubRepositorySearcher/GithubRepositorySearcher/Model/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D7EAC48-F4FC-4597-A9DD-16368EF85E96"
+            uuid = "80188F9B-E6E1-4E04-AB80-7290DCA5C524"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GithubRepositorySearcher/ViewController/GRTextField.swift"
+            filePath = "GithubRepositorySearcher/ViewController/DetailTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "init(coder:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B95EBC8A-C6BF-4368-95D8-B661DED86D40"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GithubRepositorySearcher/ViewController/GRTextField.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "init(frame:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getRepositories(repositoryName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

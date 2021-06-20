@@ -14,7 +14,7 @@ class NetworkManager {
 
     private init() {}
 
-    func getRepositories(for repositoryName: String, page: Int, completed: @escaping (Result<Response, GRError>) -> Void) {
+    func getRepositories(for repositoryName: String, completed: @escaping (Result<Response, GRError>) -> Void) {
         let endpoint = baseURL + "?q=\(repositoryName)"
         
         guard let url = URL(string: endpoint) else {

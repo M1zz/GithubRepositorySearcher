@@ -18,6 +18,9 @@
 		A5DBC525267CF30A00EBAA02 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC524267CF30A00EBAA02 /* DetailTableViewController.swift */; };
 		A5DBC542267EF8E300EBAA02 /* GRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC541267EF8E300EBAA02 /* GRTextField.swift */; };
 		A5DBC553267EFCE200EBAA02 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC552267EFCE200EBAA02 /* GRButton.swift */; };
+		A5DBC55D267F883900EBAA02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC55C267F883900EBAA02 /* NetworkManager.swift */; };
+		A5DBC562267F89A300EBAA02 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC561267F89A300EBAA02 /* Repository.swift */; };
+		A5DBC568267F89FD00EBAA02 /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC567267F89FC00EBAA02 /* GRError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		A5DBC524267CF30A00EBAA02 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		A5DBC541267EF8E300EBAA02 /* GRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTextField.swift; sourceTree = "<group>"; };
 		A5DBC552267EFCE200EBAA02 /* GRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRButton.swift; sourceTree = "<group>"; };
+		A5DBC55C267F883900EBAA02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A5DBC561267F89A300EBAA02 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A5DBC567267F89FC00EBAA02 /* GRError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 		A5DBC4E4267CC7F700EBAA02 /* GithubRepositorySearcher */ = {
 			isa = PBXGroup;
 			children = (
+				A5DBC566267F89EE00EBAA02 /* Utilities */,
+				A5DBC55B267F882600EBAA02 /* Managers */,
+				A5DBC549267EFC4500EBAA02 /* Custom Views */,
 				A5DBC534267EF0C100EBAA02 /* Model */,
 				A5DBC51B267CF28700EBAA02 /* ViewController */,
 				A5DBC4E5267CC7F700EBAA02 /* AppDelegate.swift */,
@@ -147,7 +156,7 @@
 		A5DBC534267EF0C100EBAA02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A5DBC549267EFC4500EBAA02 /* Custom Views */,
+				A5DBC561267F89A300EBAA02 /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +184,22 @@
 				A5DBC552267EFCE200EBAA02 /* GRButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		A5DBC55B267F882600EBAA02 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC55C267F883900EBAA02 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A5DBC566267F89EE00EBAA02 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC567267F89FC00EBAA02 /* GRError.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +334,10 @@
 			files = (
 				A5DBC553267EFCE200EBAA02 /* GRButton.swift in Sources */,
 				A5DBC525267CF30A00EBAA02 /* DetailTableViewController.swift in Sources */,
+				A5DBC568267F89FD00EBAA02 /* GRError.swift in Sources */,
 				A5DBC4E6267CC7F700EBAA02 /* AppDelegate.swift in Sources */,
+				A5DBC562267F89A300EBAA02 /* Repository.swift in Sources */,
+				A5DBC55D267F883900EBAA02 /* NetworkManager.swift in Sources */,
 				A5DBC542267EF8E300EBAA02 /* GRTextField.swift in Sources */,
 				A5DBC4E8267CC7F700EBAA02 /* SceneDelegate.swift in Sources */,
 				A5DBC520267CF2B500EBAA02 /* MainSearchViewController.swift in Sources */,
