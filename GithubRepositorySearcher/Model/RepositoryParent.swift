@@ -1,19 +1,13 @@
 //
-//  Repository.swift
+//  RepositoryParent.swift
 //  GithubRepositorySearcher
 //
-//  Created by 이현호 on 2021/06/20.
+//  Created by 이현호 on 2021/06/21.
 //
 
 import Foundation
 
-struct Response: Codable {
-    let totalCount: Int
-    let incompleteResults: Bool
-    let items: [Repository]
-}
-
-struct Repository : Codable {
+struct RepositoryParent : Codable {
     public let allowMergeCommit : Bool?
     public let allowRebaseMerge : Bool?
     public let allowSquashMerge : Bool?
@@ -58,7 +52,6 @@ struct Repository : Codable {
     public let labelsUrl : String?
     public let language : String?
     public let languagesUrl : String?
-    public let license : RepositoryLicense?
     public let mergesUrl : String?
     public let milestonesUrl : String?
     public let mirrorUrl : String?
@@ -66,16 +59,13 @@ struct Repository : Codable {
     public let networkCount : Int?
     public let notificationsUrl : String?
     public let openIssuesCount : Int?
-    public let organization : RepositoryOrganization?
     public let owner : RepositoryOrganization?
-    public let parent : RepositoryParent?
     public let permissions : RepositoryPermission?
     public let privateField : Bool?
     public let pullsUrl : String?
     public let pushedAt : String?
     public let releasesUrl : String?
     public let size : Int?
-    public let source : RepositoryParent?
     public let sshUrl : String?
     public let stargazersCount : Int?
     public let stargazersUrl : String?
@@ -92,13 +82,12 @@ struct Repository : Codable {
     public let url : String?
     public let watchersCount : Int?
 
-
     enum CodingKeys: String, CodingKey {
         case allowMergeCommit = "allow_merge_commit"
         case allowRebaseMerge = "allow_rebase_merge"
         case allowSquashMerge = "allow_squash_merge"
         case archiveUrl = "archive_url"
-        case archived
+        case archived = "archived"
         case assigneesUrl = "assignees_url"
         case blobsUrl = "blobs_url"
         case branchesUrl = "branches_url"
@@ -127,7 +116,7 @@ struct Repository : Codable {
         case hasIssues = "has_issues"
         case hasPages = "has_pages"
         case hasWiki = "has_wiki"
-        case homepage
+        case homepage = "homepage"
         case hooksUrl = "hooks_url"
         case htmlUrl = "html_url"
         case id
@@ -138,7 +127,6 @@ struct Repository : Codable {
         case labelsUrl = "labels_url"
         case language
         case languagesUrl = "languages_url"
-        case license
         case mergesUrl = "merges_url"
         case milestonesUrl = "milestones_url"
         case mirrorUrl = "mirror_url"
@@ -146,16 +134,13 @@ struct Repository : Codable {
         case networkCount = "network_count"
         case notificationsUrl = "notifications_url"
         case openIssuesCount = "open_issues_count"
-        case organization
         case owner
-        case parent
         case permissions
         case privateField = "private"
         case pullsUrl = "pulls_url"
         case pushedAt = "pushed_at"
         case releasesUrl = "releases_url"
         case size
-        case source
         case sshUrl = "ssh_url"
         case stargazersCount = "stargazers_count"
         case stargazersUrl = "stargazers_url"
@@ -219,7 +204,6 @@ struct Repository : Codable {
         labelsUrl = try values.decodeIfPresent(String.self, forKey: .labelsUrl)
         language = try values.decodeIfPresent(String.self, forKey: .language)
         languagesUrl = try values.decodeIfPresent(String.self, forKey: .languagesUrl)
-        license = try values.decodeIfPresent(RepositoryLicense.self, forKey: .license)
         mergesUrl = try values.decodeIfPresent(String.self, forKey: .mergesUrl)
         milestonesUrl = try values.decodeIfPresent(String.self, forKey: .milestonesUrl)
         mirrorUrl = try values.decodeIfPresent(String.self, forKey: .mirrorUrl)
@@ -227,16 +211,13 @@ struct Repository : Codable {
         networkCount = try values.decodeIfPresent(Int.self, forKey: .networkCount)
         notificationsUrl = try values.decodeIfPresent(String.self, forKey: .notificationsUrl)
         openIssuesCount = try values.decodeIfPresent(Int.self, forKey: .openIssuesCount)
-        organization = try values.decodeIfPresent(RepositoryOrganization.self, forKey: .organization)
         owner = try values.decodeIfPresent(RepositoryOrganization.self, forKey: .owner)
-        parent = try values.decodeIfPresent(RepositoryParent.self, forKey: .parent)
         permissions = try values.decodeIfPresent(RepositoryPermission.self, forKey: .permissions)
         privateField = try values.decodeIfPresent(Bool.self, forKey: .privateField)
         pullsUrl = try values.decodeIfPresent(String.self, forKey: .pullsUrl)
         pushedAt = try values.decodeIfPresent(String.self, forKey: .pushedAt)
         releasesUrl = try values.decodeIfPresent(String.self, forKey: .releasesUrl)
         size = try values.decodeIfPresent(Int.self, forKey: .size)
-        source = try values.decodeIfPresent(RepositoryParent.self, forKey: .source)
         sshUrl = try values.decodeIfPresent(String.self, forKey: .sshUrl)
         stargazersCount = try values.decodeIfPresent(Int.self, forKey: .stargazersCount)
         stargazersUrl = try values.decodeIfPresent(String.self, forKey: .stargazersUrl)

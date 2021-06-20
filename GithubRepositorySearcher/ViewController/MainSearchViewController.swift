@@ -48,7 +48,6 @@ class MainSearchViewController: UIViewController {
     }
 }
 
-
 extension MainSearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         

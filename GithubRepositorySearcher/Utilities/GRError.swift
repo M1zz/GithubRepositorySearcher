@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 enum GRError: String, Error {
     case invalidRepositoryname = "이 레파지토리 이름은 잘못된 요청입니다. 다시 요청해주세요."
     case unableToComplete = "요청을 완료할 수 없습니다. 네트워크 연결을 확인해주세요."

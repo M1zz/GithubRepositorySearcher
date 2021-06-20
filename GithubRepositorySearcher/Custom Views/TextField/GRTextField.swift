@@ -35,7 +35,7 @@ final class GRTextField: UITextField {
         autocorrectionType = .no
         returnKeyType = .go
         clearButtonMode = .whileEditing
-        placeholder = "Enter a username"
+        placeholder = "Enter a repository name"
     }
 
 }
