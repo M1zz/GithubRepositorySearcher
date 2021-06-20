@@ -18,7 +18,7 @@ class NetworkManager {
         let endpoint = baseURL + "?q=\(repositoryName)"
         
         guard let url = URL(string: endpoint) else {
-            completed(.failure(.invalidUsername))
+            completed(.failure(.invalidRepositoryname))
             return
         }
         

@@ -21,6 +21,8 @@
 		A5DBC55D267F883900EBAA02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC55C267F883900EBAA02 /* NetworkManager.swift */; };
 		A5DBC562267F89A300EBAA02 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC561267F89A300EBAA02 /* Repository.swift */; };
 		A5DBC568267F89FD00EBAA02 /* GRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC567267F89FC00EBAA02 /* GRError.swift */; };
+		A5DBC5A6267FA87900EBAA02 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5A5267FA87900EBAA02 /* UITableView+Ext.swift */; };
+		A5DBC5AB267FAA5E00EBAA02 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC5AA267FAA5E00EBAA02 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		A5DBC55C267F883900EBAA02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5DBC561267F89A300EBAA02 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		A5DBC567267F89FC00EBAA02 /* GRError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRError.swift; sourceTree = "<group>"; };
+		A5DBC5A5267FA87900EBAA02 /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		A5DBC5AA267FAA5E00EBAA02 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		A5DBC4E4267CC7F700EBAA02 /* GithubRepositorySearcher */ = {
 			isa = PBXGroup;
 			children = (
+				A5DBC5A4267FA87900EBAA02 /* Extensions */,
 				A5DBC566267F89EE00EBAA02 /* Utilities */,
 				A5DBC55B267F882600EBAA02 /* Managers */,
 				A5DBC549267EFC4500EBAA02 /* Custom Views */,
@@ -200,6 +205,15 @@
 				A5DBC567267F89FC00EBAA02 /* GRError.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A5DBC5A4267FA87900EBAA02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC5A5267FA87900EBAA02 /* UITableView+Ext.swift */,
+				A5DBC5AA267FAA5E00EBAA02 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,10 +349,12 @@
 				A5DBC553267EFCE200EBAA02 /* GRButton.swift in Sources */,
 				A5DBC525267CF30A00EBAA02 /* DetailTableViewController.swift in Sources */,
 				A5DBC568267F89FD00EBAA02 /* GRError.swift in Sources */,
+				A5DBC5AB267FAA5E00EBAA02 /* UIViewController+Ext.swift in Sources */,
 				A5DBC4E6267CC7F700EBAA02 /* AppDelegate.swift in Sources */,
 				A5DBC562267F89A300EBAA02 /* Repository.swift in Sources */,
 				A5DBC55D267F883900EBAA02 /* NetworkManager.swift in Sources */,
 				A5DBC542267EF8E300EBAA02 /* GRTextField.swift in Sources */,
+				A5DBC5A6267FA87900EBAA02 /* UITableView+Ext.swift in Sources */,
 				A5DBC4E8267CC7F700EBAA02 /* SceneDelegate.swift in Sources */,
 				A5DBC520267CF2B500EBAA02 /* MainSearchViewController.swift in Sources */,
 			);

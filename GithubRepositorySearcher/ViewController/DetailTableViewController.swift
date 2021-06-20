@@ -49,8 +49,16 @@ final class DetailTableViewController: UIViewController {
             
             switch result {
             case .success(let repositories):
+                
                 self.repositories = repositories.items
-                self.tableView.reloadDataOnMainThread()
+                if self.repositories.isEmpty {
+                    DispatchQueue.main.async {
+                        self.presentAlert(errorMessage: .noResult)
+                    }
+                } else {
+                    self.tableView.reloadDataOnMainThread()
+                }
+                
             case .failure(let error):
                 print(error)
             }

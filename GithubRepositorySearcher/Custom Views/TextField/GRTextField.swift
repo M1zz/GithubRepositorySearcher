@@ -7,7 +7,6 @@
 
 import UIKit
 
-@IBDesignable
 final class GRTextField: UITextField {
 
     required init?(coder: NSCoder) {
