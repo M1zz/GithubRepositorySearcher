@@ -67,14 +67,28 @@
         <!--Detail Table View Controller-->
         <scene sceneID="gdB-dz-sMC">
             <objects>
-                <viewController id="31q-Fo-KGd" customClass="DetailTableViewController" customModule="GithubRepositorySearcher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailTableViewController" id="31q-Fo-KGd" customClass="DetailTableViewController" customModule="GithubRepositorySearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nox-dz-EQU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oHO-Lh-Fa3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lEA-gF-s7m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lEA-gF-s7m" firstAttribute="bottom" secondItem="oHO-Lh-Fa3" secondAttribute="bottom" id="EzH-Yw-dC3"/>
+                            <constraint firstItem="lEA-gF-s7m" firstAttribute="trailing" secondItem="oHO-Lh-Fa3" secondAttribute="trailing" id="fkB-oW-kLx"/>
+                            <constraint firstItem="oHO-Lh-Fa3" firstAttribute="top" secondItem="lEA-gF-s7m" secondAttribute="top" id="ofd-bg-3Lk"/>
+                            <constraint firstItem="oHO-Lh-Fa3" firstAttribute="leading" secondItem="lEA-gF-s7m" secondAttribute="leading" id="rzM-2t-sAd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qC0-HX-Dlh"/>
+                    <connections>
+                        <outlet property="tableView" destination="oHO-Lh-Fa3" id="tN0-2H-hhd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1P-wo-8x9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

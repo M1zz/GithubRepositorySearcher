@@ -33,7 +33,7 @@ class MainSearchViewController: UIViewController {
     }
     
     @objc private func pushDetailViewController() {
-        let followerListVC = DetailTableViewController()
+        let followerListVC = DetailTableViewController.instantiateFromStoryboard()
         navigationController?.pushViewController(followerListVC, animated: true)
     }
 }

@@ -9,8 +9,18 @@ import UIKit
 
 class DetailTableViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    static func instantiateFromStoryboard() -> DetailTableViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! DetailTableViewController
+        return viewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .systemBackground
+        tableView.backgroundColor = .red
+        navigationItem.title = "test"
     }
 }
