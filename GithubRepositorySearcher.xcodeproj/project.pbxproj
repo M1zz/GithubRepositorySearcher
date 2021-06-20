@@ -16,6 +16,8 @@
 		A5DBC508267CC7FA00EBAA02 /* GithubRepositorySearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC507267CC7FA00EBAA02 /* GithubRepositorySearcherUITests.swift */; };
 		A5DBC520267CF2B500EBAA02 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC51F267CF2B500EBAA02 /* MainSearchViewController.swift */; };
 		A5DBC525267CF30A00EBAA02 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC524267CF30A00EBAA02 /* DetailTableViewController.swift */; };
+		A5DBC542267EF8E300EBAA02 /* GRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC541267EF8E300EBAA02 /* GRTextField.swift */; };
+		A5DBC553267EFCE200EBAA02 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBC552267EFCE200EBAA02 /* GRButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A5DBC509267CC7FA00EBAA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DBC51F267CF2B500EBAA02 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		A5DBC524267CF30A00EBAA02 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		A5DBC541267EF8E300EBAA02 /* GRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTextField.swift; sourceTree = "<group>"; };
+		A5DBC552267EFCE200EBAA02 /* GRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,8 @@
 		A5DBC4E4267CC7F700EBAA02 /* GithubRepositorySearcher */ = {
 			isa = PBXGroup;
 			children = (
-				A5DBC51B267CF28700EBAA02 /* View */,
+				A5DBC534267EF0C100EBAA02 /* Model */,
+				A5DBC51B267CF28700EBAA02 /* ViewController */,
 				A5DBC4E5267CC7F700EBAA02 /* AppDelegate.swift */,
 				A5DBC4E7267CC7F700EBAA02 /* SceneDelegate.swift */,
 				A5DBC4EE267CC7F900EBAA02 /* Assets.xcassets */,
@@ -129,14 +134,47 @@
 			path = GithubRepositorySearcherUITests;
 			sourceTree = "<group>";
 		};
-		A5DBC51B267CF28700EBAA02 /* View */ = {
+		A5DBC51B267CF28700EBAA02 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A5DBC4EB267CC7F700EBAA02 /* Main.storyboard */,
 				A5DBC51F267CF2B500EBAA02 /* MainSearchViewController.swift */,
 				A5DBC524267CF30A00EBAA02 /* DetailTableViewController.swift */,
 			);
-			path = View;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A5DBC534267EF0C100EBAA02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC549267EFC4500EBAA02 /* Custom Views */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DBC549267EFC4500EBAA02 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC551267EFCBE00EBAA02 /* Button */,
+				A5DBC54A267EFC5500EBAA02 /* TextField */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A5DBC54A267EFC5500EBAA02 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC541267EF8E300EBAA02 /* GRTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		A5DBC551267EFCBE00EBAA02 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A5DBC552267EFCE200EBAA02 /* GRButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DBC553267EFCE200EBAA02 /* GRButton.swift in Sources */,
 				A5DBC525267CF30A00EBAA02 /* DetailTableViewController.swift in Sources */,
 				A5DBC4E6267CC7F700EBAA02 /* AppDelegate.swift in Sources */,
+				A5DBC542267EF8E300EBAA02 /* GRTextField.swift in Sources */,
 				A5DBC4E8267CC7F700EBAA02 /* SceneDelegate.swift in Sources */,
 				A5DBC520267CF2B500EBAA02 /* MainSearchViewController.swift in Sources */,
 			);
